@@ -184,15 +184,7 @@
 
             <!-- Grid Mapel -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
-                <!-- Mapel 1: B.INDO -->
-                <button onclick="fetchAndStart('Bahasa Indonesia')" class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:border-brand-orange hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center text-brand-orange text-2xl mb-4 group-hover:bg-brand-orange group-hover:text-white transition-colors"><i class="fas fa-book-open"></i></div>
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Bahasa Indonesia</h3>
-                    <p class="text-xs text-slate-500 mb-4">Tes literasi dan pemahaman bacaan.</p>
-                    <span class="text-xs font-bold text-brand-orange bg-orange-50 px-3 py-1 rounded-lg w-full group-hover:bg-brand-orange group-hover:text-white transition-colors">Mulai Tes</span>
-                </button>
-                
-                <!-- Mapel 2: MTK WAJIB -->
+                <!-- Mapel 1: MTK WAJIB -->
                 <button onclick="fetchAndStart('Matematika Wajib')" class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:border-brand-pink hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col items-center text-center relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-brand-pink text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">HOT!</div>
                     <div class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center text-brand-pink text-2xl mb-4 group-hover:bg-brand-pink group-hover:text-white transition-colors"><i class="fas fa-square-root-variable"></i></div>
@@ -201,48 +193,21 @@
                     <span class="text-xs font-bold text-brand-pink bg-pink-50 px-3 py-1 rounded-lg w-full group-hover:bg-brand-pink group-hover:text-white transition-colors">Mulai Tes</span>
                 </button>
                 
-                <!-- Mapel 3: B.INGGRIS -->
-                <button onclick="fetchAndStart('Bahasa Inggris')" class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:border-brand-blue hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-brand-blue text-2xl mb-4 group-hover:bg-brand-blue group-hover:text-white transition-colors"><i class="fas fa-language"></i></div>
-                    <h3 class="font-bold text-lg text-slate-800 mb-2">Bahasa Inggris</h3>
-                    <p class="text-xs text-slate-500 mb-4">Uji tata bahasa dan kosakata bahasa asing.</p>
-                    <span class="text-xs font-bold text-brand-blue bg-blue-50 px-3 py-1 rounded-lg w-full group-hover:bg-brand-blue group-hover:text-white transition-colors">Mulai Tes</span>
-                </button>
-
-                <!-- Mapel 4: FISIKA (LOCKED) -->
-                <button onclick="showPremiumModal('Fisika')" class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-200 transition-all flex flex-col items-center text-center relative overflow-hidden opacity-90 hover:opacity-100">
-                    <div class="absolute top-0 right-0 bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1"><i class="fas fa-lock text-[8px]"></i> PREMIUM</div>
-                    <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 text-2xl mb-4"><i class="fas fa-atom"></i></div>
-                    <h3 class="font-bold text-lg text-slate-600 mb-2">Fisika</h3>
-                    <p class="text-xs text-slate-400 mb-4">Uji pemahaman hukum alam dan rumus gerak.</p>
-                    <span class="text-xs font-bold text-slate-500 bg-slate-200 px-3 py-1 rounded-lg w-full"><i class="fas fa-lock mr-1"></i> Terkunci</span>
+                <!-- Mapel 2: FISIKA -->
+                <button onclick="fetchAndStart('Fisika')" class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col items-center text-center relative overflow-hidden">
+                    <div class="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center text-purple-600 text-2xl mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors"><i class="fas fa-atom"></i></div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Fisika</h3>
+                    <p class="text-xs text-slate-500 mb-4">Uji pemahaman hukum alam dan rumus gerak.</p>
+                    <span class="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-lg w-full group-hover:bg-purple-600 group-hover:text-white transition-colors">Mulai Tes</span>
                 </button>
                 
-                <!-- Mapel 5: KIMIA (LOCKED) -->
-                <button onclick="showPremiumModal('Kimia')" class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-200 transition-all flex flex-col items-center text-center relative overflow-hidden opacity-90 hover:opacity-100">
-                    <div class="absolute top-0 right-0 bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1"><i class="fas fa-lock text-[8px]"></i> PREMIUM</div>
-                    <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 text-2xl mb-4"><i class="fas fa-flask"></i></div>
-                    <h3 class="font-bold text-lg text-slate-600 mb-2">Kimia</h3>
-                    <p class="text-xs text-slate-400 mb-4">Eksplorasi reaksi unsur, molekul, & senyawa.</p>
-                    <span class="text-xs font-bold text-slate-500 bg-slate-200 px-3 py-1 rounded-lg w-full"><i class="fas fa-lock mr-1"></i> Terkunci</span>
-                </button>
-                
-                <!-- Mapel 6: BIOLOGI (LOCKED) -->
-                <button onclick="showPremiumModal('Biologi')" class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-200 transition-all flex flex-col items-center text-center relative overflow-hidden opacity-90 hover:opacity-100">
-                    <div class="absolute top-0 right-0 bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1"><i class="fas fa-lock text-[8px]"></i> PREMIUM</div>
-                    <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 text-2xl mb-4"><i class="fas fa-dna"></i></div>
-                    <h3 class="font-bold text-lg text-slate-600 mb-2">Biologi</h3>
-                    <p class="text-xs text-slate-400 mb-4">Tes penguasaan materi sel dan ekosistem.</p>
-                    <span class="text-xs font-bold text-slate-500 bg-slate-200 px-3 py-1 rounded-lg w-full"><i class="fas fa-lock mr-1"></i> Terkunci</span>
-                </button>
-
-                <!-- Mapel 7: MTK LANJUT (LOCKED) -->
-                <button onclick="showPremiumModal('Matematika Lanjut')" class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-200 transition-all flex flex-col items-center text-center relative overflow-hidden opacity-90 hover:opacity-100">
-                    <div class="absolute top-0 right-0 bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1"><i class="fas fa-lock text-[8px]"></i> PREMIUM</div>
-                    <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 text-2xl mb-4"><i class="fas fa-superscript"></i></div>
-                    <h3 class="font-bold text-lg text-slate-600 mb-2">Matematika Lanjut</h3>
-                    <p class="text-xs text-slate-400 mb-4">Tantangan kalkulus & aljabar tingkat lanjut.</p>
-                    <span class="text-xs font-bold text-slate-500 bg-slate-200 px-3 py-1 rounded-lg w-full"><i class="fas fa-lock mr-1"></i> Terkunci</span>
+                <!-- Mapel 3: MTK LANJUT -->
+                <button onclick="fetchAndStart('Matematika Lanjut')" class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:border-rose-500 hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col items-center text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-rose-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">SULIT!</div>
+                    <div class="w-16 h-16 bg-rose-50 rounded-full flex items-center justify-center text-rose-600 text-2xl mb-4 group-hover:bg-rose-600 group-hover:text-white transition-colors"><i class="fas fa-superscript"></i></div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Matematika Lanjut</h3>
+                    <p class="text-xs text-slate-500 mb-4">Tantangan kalkulus & aljabar tingkat lanjut.</p>
+                    <span class="text-xs font-bold text-rose-600 bg-rose-50 px-3 py-1 rounded-lg w-full group-hover:bg-rose-600 group-hover:text-white transition-colors">Mulai Tes</span>
                 </button>
             </div>
         </section>
@@ -380,6 +345,15 @@
         let startTime;
         let currentQuestionIndex = 0; // State untuk Pagination
 
+        // FUNGSI ACAK SOAL (Fisher-Yates Shuffle)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
         // --- GLOBAL MODALS ---
         function showModal(title, desc, iconHtml, customActionsHTML) {
             document.getElementById('modal-title').innerText = title;
@@ -469,7 +443,13 @@
                 const result = await response.json();
                 
                 if (result.status === 'success' && result.data.length > 0) {
-                    questions = result.data;
+                    
+                    // --- LOGIKA SHUFFLE DAN LIMIT 10 SOAL ---
+                    let allQuestions = result.data;
+                    let shuffledQuestions = shuffleArray(allQuestions);
+                    questions = shuffledQuestions.slice(0, 10); // Hanya ambil 10 soal
+                    // -----------------------------------------
+                    
                     userAnswers = {};
                     currentQuestionIndex = 0;
                     
@@ -642,10 +622,10 @@
                 });
             }
 
+            // PERUBAHAN: Dihapus lingkaran nomor soalnya, langsung ke konten soal
             container.innerHTML = `
             <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 relative overflow-hidden animate-[fadeIn_0.3s_ease-in-out]">
                 <div class="flex items-start gap-4">
-                    <div class="bg-brand-dark w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-white shrink-0 shadow-md">${index + 1}</div>
                     <div class="flex-1 overflow-x-hidden">
                         ${stimulusHTML}
                         ${soalHTML}
@@ -723,8 +703,6 @@
 
                 if (type === 3) {
                     const ansObj = userAnswers[q.no] || {};
-                    // Ubah {"1":"B", "2":"B", "3":"S"} jadi array index misal [B, B, S] tapi prompt sblmnya kita simpan nomor benar aja
-                    // Untuk amannya, evaluasi Tipe 3 di backend aslinya. Di dummy ini kita anggap benar jika eksak.
                     let ansStr = Object.values(ansObj).join('');
                     if (ansStr === key) isCorrect = true;
                 } else {
@@ -736,7 +714,6 @@
                 if (isCorrect) correctCount++;
 
                 // Bangun Data Analitik
-                // Asumsi kolom ditarik dari Sheet: q.topik, q.subtopik
                 let topStr = q.topik || "Materi Umum";
                 let subStr = q.subtopik || "Konsep Dasar";
                 
@@ -809,8 +786,9 @@
             list.innerHTML = "";
             
             questions.forEach((q, idx) => {
-                const no = q.no;
-                let ans = userAnswers[no] || "Kosong";
+                const originalNo = q.no;
+                const displayNo = idx + 1; // Tampilkan nomor urut sesi (1 sampai 10)
+                let ans = userAnswers[originalNo] || "Kosong";
                 if(Array.isArray(ans)) ans = ans.join(', ');
                 if(typeof ans === 'object') ans = Object.values(ans).join(',');
                 
@@ -826,7 +804,7 @@
                 list.innerHTML += `
                 <div class="bg-white p-5 md:p-6 rounded-2xl shadow-sm border ${isCorrect?'border-green-400':'border-red-400'}">
                     <div class="flex justify-between items-center mb-4">
-                        <span class="font-bold text-sm">Soal No. ${no}</span>
+                        <span class="font-bold text-sm">Soal Ke-${displayNo}</span>
                         <span class="font-bold text-[10px] px-2 py-1 rounded-md ${isCorrect?'text-green-600 bg-green-100':'text-red-600 bg-red-100 uppercase'}">${isCorrect?'BENAR':'SALAH'}</span>
                     </div>
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 mb-4">${qHTML}</div>
